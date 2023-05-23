@@ -57,6 +57,8 @@ function createNewRamen(e) {
         comment: e.target['new-comment'].value,
         image: e.target.image.value,
     };
+
+    e.target.reset()
     createRamen(newRamen);
 }
 
